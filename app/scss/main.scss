@@ -1,0 +1,39 @@
+
+@import "_reset.scss";
+
+
+@import "_header.scss";
+
+@import "_first-screen.scss";
+@import "_about.scss";
+@import "_drivers.scss";
+@import "_car.scss";
+
+@import "_footer.scss";
+
+
+
+body {
+    font-family: Titillium Web, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.main-wrapper {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-title {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #F50A4D;
+
+    &--huge {
+        font-size: 88px;
+    }
+}

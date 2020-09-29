@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stas Sklyar</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap"
+    rel="stylesheet">
+  <script defer src="js/scripts.min.js"></script>
+</head>
+
+<body>
+  <!-- ------------------- Header ----------------- -->
+  <header class="header">
+    <div class="header__body main-wrapper">
+
+
+      <div class="header__burger burger">
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="50">
+          <path class="line top"
+            d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+          <path class="line middle" d="m 70,50 h -40" />
+          <path class="line bottom"
+            d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+      </div>
+
+      <nav class="header__adaptive-menu adaptive-menu">
+        <ul class="adaptive-menu__list">
+          <li class="adaptive-menu__item"><a href="#about" class="adaptive-menu__link">About</a></li>
+          <li class="adaptive-menu__item"><a href="#drivers" class="adaptive-menu__link">Drivers</a></li>
+          <li class="adaptive-menu__item"><a href="#car" class="adaptive-menu__link">Car</a></li>
+        </ul>
+      </nav>
+
+      <picture>
+        <source srcset="img/hw-logo.svg" type="image/webp"><img class="header__logo" src="img/hw-logo.svg" alt="logo">
+      </picture>
+
+
+      <nav class="header__menu menu-header" id="menu-header">
+
+        <ul class="menu-header__list">
+          <li class="menu-header__item"><a href="#about" class="menu-header__link">About</a></li>
+          <li class="menu-header__item"><a href="#drivers" class="menu-header__link">Drivers</a></li>
+          <li class="menu-header__item"><a href="#car" class="menu-header__link">Car</a></li>
+        </ul>
+
+        <div class="menu-header__contact contact">
+          <span class="contact__open-modal js-open-modal" data-modal="1">contact</span>
+        </div>
+
+      </nav>
+
+
+    </div>
+  </header>
+  <!-- ------------------- Header end ----------------- -->
+
+
+  <!-- ------------------- First screen ----------------- -->
+  <div class="first-screen">
+    <div class="first-screen__body main-wrapper">
+      <h1 class="first-screen__title main-title main-title--huge">HeadWorks F1</h1>
+      <picture>
+        <source srcset="img/hw-header-car.webp" type="image/webp"><img src="img/hw-header-car.png" alt="header-car"
+          class="first-screen__decor"></picture>
+    </div>
+  </div>
+  <div class="about" id="about">
+    <div class="about__body main-wrapper">
+
+      <div class="about__img-wrapper">
+        <picture>
+          <source srcset="img/hw-about-background.webp" type="image/webp"><img src="img/hw-about-background.jpg"
+            alt="about-background" class="about__img"></picture>
+      </div>
+
+
+      <div class="about__text">
+        <p class="about__paragraph">We are It company that passioned about motorsport. Teamwork, innovations,
+          and modern approaches - principles we are building our team around.</p>
+        <p class="about__paragraph">With the challenge of making
+          racing cars faster, lighter, and more reliable, Headworks Motosport was born: the company that
+          specializes in the development of innovative methods and the production of high-quality components
+          that never existed before.</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- ------------------- First screen end ----------------- -->
+
+
+
+
+  <!-- ------------------- Drivers ----------------- -->
+  <section class="drivers" id="drivers">
+    <div class="drivers__body main-wrapper">
+
+
+      <h2 class="drivers__title main-title">Drivers</h2>
+
+      <div class="drivers__container">
+
+        <div class="drivers__item item-driver">
+          <picture>
+            <source srcset="img/hw-driver-stig-2.webp" type="image/webp"><img src="img/hw-driver-stig-2.jpg"
+              alt="driver" class="item-driver__photo"></picture>
+
+          <div class="item-driver__content">
+
+            <div class="item-driver__top driver-namig">
+              <span class="driver-namig__subtitle">Fulstack racing driver</span>
+              <span class="driver-namig__name-driver">Javan Scripter</span>
+            </div>
+
+            <div class="item-driver__info driver-info">
+              <ul class="driver-info__list">
+                <li class="driver-info__item"><span>Races:</span> 122</li>
+                <li class="driver-info__item"><span>Pole-positions:</span> 9</li>
+                <li class="driver-info__item"><span>Podiums:</span> 15</li>
+              </ul>
+              <ul class="driver-info__list">
+                <li class="driver-info__item"><span>Wins:</span> 3</li>
+                <li class="driver-info__item"><span>Date of birth:</span> 1994/12/10</li>
+                <li class="driver-info__item"><span>Place of birth:</span> Madrid, Spain</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="drivers__item item-driver item-driver--reverse">
+          <picture>
+            <source srcset="img/hw-driver-stig-1.webp" type="image/webp"><img src="img/hw-driver-stig-1.jpg"
+              alt="driver" class="item-driver__photo"></picture>
+
+          <div class="item-driver__content">
+
+            <div class="item-driver__top driver-namig driver-namig--reverse">
+              <span class="driver-namig__subtitle">Fulstack racing driver</span>
+              <span class="driver-namig__name-driver">Javan Scripter</span>
+            </div>
+
+            <div class="item-driver__info driver-info">
+              <ul class="driver-info__list">
+                <li class="driver-info__item"><span>Races:</span> 122</li>
+                <li class="driver-info__item"><span>Pole-positions:</span> 9</li>
+                <li class="driver-info__item"><span>Podiums:</span> 15</li>
+              </ul>
+              <ul class="driver-info__list">
+                <li class="driver-info__item"><span>Wins:</span> 3</li>
+                <li class="driver-info__item"><span>Date of birth:</span> 1994/12/10</li>
+                <li class="driver-info__item"><span>Place of birth:</span> Madrid, Spain</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </section>
+  <!-- ------------------- Drivers end ----------------- -->
+
+
+
+
+
+  <!-- ------------------- Car ----------------- -->
+  <section class="car" id="car">
+    <div class="car__body main-wrapper">
+      <h2 class="car__title main-title">Car</h2>
+      <div class="car__container">
+
+        <div class="car__about-car about-car">
+
+          <picture>
+            <source srcset="img/hw-car-car_image.webp" type="image/webp"><img src="img/hw-car-car_image.jpg"
+              alt="car-image" class="about-car__img"></picture>
+
+          <div class="about-car__info">
+            <ul class="about-car__list">
+              <li class="about-car__item">Year: 2020</li>
+              <li class="about-car__item">Wins: 3</li>
+              <li class="about-car__item">Poles: 5</li>
+              <li class="about-car__item">Points: 78</li>
+            </ul>
+          </div>
+
+
+          <div class="about-car__info-on-img">
+            Power 950–1,000 horsepower (710–750 kW) <br>
+            Weight 733 kg (1,616.0 lb)
+          </div>
+        </div>
+
+        <div class="car__aditional-info info-about-car">
+          <ul class="info-about-car__list">
+            <li class="info-about-car__item">Width 2,000 mm (79 in)</li>
+            <li class="info-about-car__item">Height 950 mm (37 in)</li>
+            <li class="info-about-car__item">Wheelbase 3,726 mm (146.7 in)</li>
+          </ul>
+          <ul class="info-about-car__list">
+            <li class="info-about-car__item">0 to 100 km/h (62 mph): 2.4 seconds</li>
+            <li class="info-about-car__item">0 to 200 km/h (124 mph): 4.4 seconds</li>
+            <li class="info-about-car__item">0 to 300 km/h (186 mph): 8.4 seconds</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ------------------- Car end ----------------- -->
+
+
+  <!-- ------------------- Footer ----------------- -->
+  <footer class="footer">
+    <div class="footer__body main-wrapper">
+
+      <div class="footer__column footer-info">
+
+        <picture>
+          <source srcset="img/hw-logo.svg" type="image/webp"><img src="img/hw-logo.svg" alt="logo"
+            class="footer-info__logo"></picture>
+
+        <div class="footer-info__text">
+          <p class="footer-info__paragraph">We are It company that passioned about motorsport. Teamwork,
+            innovations, and modern approaches - principles we are building our team around.</p>
+        </div>
+
+      </div>
+
+      <div class="footer__column footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a href="#" class="footer-menu__link">About</a></li>
+          <li class="footer-menu__item"><a href="#" class="footer-menu__link">Drivers</a></li>
+          <li class="footer-menu__item"><a href="#" class="footer-menu__link">Car</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <form class="footer__form footer-form">
+          <input class="footer-form__input" type="email" placeholder="Email" required>
+          <textarea name="message" id="message" class="footer-form__textarea" placeholder="Message" required></textarea>
+          <button class="footer-form__button" type="submit">Contact</button>
+        </form>
+      </div>
+
+
+
+    </div>
+  </footer>
+  <!-- ------------------- Footer ----------------- -->
+
+
+
+  <!-- ------------------- Modal window ----------------- -->
+  <div class="modal" data-modal="1">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+    </svg>
+    <p class="modal__info">You can call us on these phone numbers:
+      <a class="modal__tel" href="tel: +380987647567">+38 098 764 75 67</a>
+      <a class="modal__tel" href="tel: +380984247524">+38 098 424 75 24</a>
+    </p>
+  </div>
+
+  <!-- Подложка под модальным окном -->
+  <div class="overlay js-overlay-modal"></div>
+
+  <!-- Подложка под активное адаптивное меню -->
+  <div class="wrapper-for-adapt-menu"></div>
+
+
+</body>
+
+</html>

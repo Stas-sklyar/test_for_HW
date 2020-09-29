@@ -1,0 +1,84 @@
+.first-screen {
+    height: 380px;
+    background: #ffffff url(../img/hw-header-background.jpg) repeat-x;
+
+
+    &__body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+
+    &__title {
+        position: relative;
+        margin-left: 100px;
+        @media screen and(max-width: 650px) {
+            margin-left: 0;
+            margin: 0 auto;
+            font-size: 48px;
+        }
+        &:before, &:after {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            color: #333333;
+        }
+
+        &:before {
+            content: "Racing Team";
+            position: absolute;
+            top: -55px;
+            left: 0;
+
+            @media screen and(max-width: 650px) {
+                top: -30px;
+            }
+        }
+
+        &:after {
+            content: "Code clean, care fast";
+            position: absolute;
+            bottom: -55px;
+            right: 0;
+
+            @media screen and(max-width: 650px) {
+                bottom: -30px;
+            }
+        }
+    }
+
+
+    &__decor {
+        width: 100%;
+        height: auto;
+        max-width: 530px;
+        overflow: hidden;
+        position: absolute;
+        right: 100px;
+        bottom: -35px;
+        animation-name: slideInRight;
+        animation-duration: 1s;
+
+        @media screen and(max-width: 650px) {
+            left: 0;
+        }
+    }
+}
+
+
+
+@keyframes slideInRight {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }

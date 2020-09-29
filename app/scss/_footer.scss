@@ -1,0 +1,258 @@
+.footer {
+    background-color: #333333;
+    padding: 45px 0;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media screen and(max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and(max-width: 400px) {
+            align-items: flex-start;
+        }
+    }
+
+
+    &__column {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    &__form {
+    }
+}
+
+.footer-info {
+    width: 100%;
+    max-width: 435px;
+
+    @media screen and(max-width: 768px) {
+            margin-bottom: 25px;
+            max-width: 290px;
+        }
+
+    &__logo {
+        margin-bottom: 30px;
+    }
+
+
+    &__text {
+    }
+
+
+    &__paragraph {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #E0E0E0;
+    }
+}
+.footer-menu {
+    margin-right: 20px;
+
+    &__list {
+        @media screen and(max-width: 768px) {
+            display: flex;
+            margin-bottom: 25px;
+            margin-right: 0;
+            width: 290px;
+        }
+    }
+
+
+    &__item {
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media screen and(max-width: 768px) {
+            margin-bottom: 0;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+
+    &__link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: #F2F2F2;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 0;
+            transition: all .2s ease-in;
+        }
+
+        &:hover {
+            &:after {
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                transition: all .2s ease-in;
+            }
+        
+        }
+    }
+}
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+
+
+    &__input {
+        padding: 0 10px;
+        height: 30px;
+        margin-bottom: 10px;
+        background-color: transparent;
+        border: 1px solid #4F4F4F;
+
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.08em;
+        text-transform: capitalize;
+        color: #F2F2F2;
+    }
+
+
+    &__textarea {
+        padding: 5px 10px;
+        height: 90px;
+        background-color: transparent;
+        border: 1px solid #4F4F4F;
+        margin-bottom: 15px;
+        resize: none;
+
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.08em;
+        text-transform: capitalize;
+        color: #F2F2F2;
+    }
+
+    &__button {
+        background: #4F4F4F;
+        outline: none;
+        border: none;
+        height: 40px;
+        cursor: pointer;
+
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.08em;
+        text-transform: capitalize;
+        color: #F2F2F2;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+
+
+/* Стили для подложки */
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+
+ }
+ 
+ 
+ /* Стили для модальных окон */
+ .modal {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+
+    &__tel {
+        display: block;
+        margin: 10px;
+
+        font-size: 18px;
+        line-height: 24px;
+        color: #333;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__info {
+        font-size: 18px;
+        line-height: 24px;
+        color: #333;
+    }
+ }
+ 
+ 
+ /* Стили для активных классов подложки и окна */
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ 
+ 
+ /* Стили для кнопки закрытия */
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    fill: #333;
+    cursor: pointer;
+ }
+ 
+ 
