@@ -29,10 +29,6 @@
     &__logo {
         width: auto !important;
         height: 40px !important;
-
-        @media screen and(max-width: 500px) {
-            margin-left: 45px;
-        }
     }
 
 
@@ -69,6 +65,7 @@
         line-height: 32px;
         letter-spacing: 0.01em;
         color: #FAFAFA;
+        text-transform: uppercase;
     }
 
     &:hover {
